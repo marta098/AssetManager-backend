@@ -1,0 +1,15 @@
+UPDATE role
+SET name = 'ROLE_MANAGER_IT'
+WHERE id = 0;
+
+UPDATE role
+SET name = 'ROLE_EMPLOYEE_IT'
+WHERE id = 1;
+
+UPDATE role
+SET name = 'ROLE_MANAGER_DHL'
+WHERE id = 2;
+
+UPDATE role
+SET name = 'ROLE_EMPLOYEE_DHL'
+WHERE id = 3;

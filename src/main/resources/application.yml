@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: asset-manager
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+  thymeleaf:
+    prefix: classpath:/mail/templates/
+
+authentication:
+  jwt:
+    secret: TjWnZr4u7x!A%C*F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq3t6w9z$C&F)J@M
+

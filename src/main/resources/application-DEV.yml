@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;database=asset-manager
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: ASSET-manager12345!
+  mail:
+#    host: localhost
+#    port: 10025
+    #haslo do gmail: uwgqybwiqrsacqnb
+
+    host: smtp.gmail.com
+    port: 587
+    password: uwgqybwiqrsacqnb
+    username: marta.zuk08@gmail.com
+    tls: true
+    protocol: smtp
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+
+#  ldap:
+#    embedded:
+#      port: 8389
+#      ldif: classpath:ldap-data.ldif
+#      base-dn: dc=springframework,dc=org
+#      url: ldap://localhost:8389/
+#      group-search-base: ou=express
+
+ad.domain: assetManager.local
+ad.url: ldap://192.168.56.101:389
+
+mail:
+  sender: asset-manager@dhl.com
+
+frontend:
+  url: 'http://localhost:3000'
+
