@@ -19,6 +19,56 @@ go
 
 
 -- order
+UPDATE [order]
+SET order_number = '2023-07-19-1'
+WHERE id = 1;
+
+UPDATE [order]
+SET receiver_id = 1
+WHERE id = 1;
+
+UPDATE [order]
+SET added_date = '2022-01-25 13:20:00.0000000'
+WHERE id = 1;
+
+UPDATE [order]
+SET mpk_number_id = 1
+WHERE id = 1;
+
+UPDATE [order]
+SET requested_model = 'SMALL_LAPTOP'
+WHERE id = 1;
+
+UPDATE [order]
+SET requester_id = 1
+WHERE id = 1;
+
+
+UPDATE [order]
+SET order_number = '2023-07-19-2'
+WHERE id = 2;
+
+UPDATE [order]
+SET receiver_id = 2
+WHERE id = 2;
+
+UPDATE [order]
+SET added_date = '2022-01-30 13:20:00.0000000'
+WHERE id = 2;
+
+UPDATE [order]
+SET mpk_number_id = 2
+WHERE id = 2;
+
+UPDATE [order]
+SET requested_model = 'SMALL_LAPTOP'
+WHERE id = 2;
+
+UPDATE [order]
+SET requester_id = 2
+WHERE id = 2;
+
+
 alter table [order]
     alter column delivery_type nvarchar(max) not null
 go
@@ -107,6 +157,80 @@ go
 
 
 -- asset
+UPDATE [asset]
+SET deprecation = '2025-07-19 19:14:27.000'
+WHERE id = 1;
+
+UPDATE [asset]
+SET current_user_id = 1
+WHERE id = 1;
+
+UPDATE [asset]
+SET crest_code = 1
+WHERE id = 1;
+
+UPDATE [asset]
+SET status = 'IN_USE'
+WHERE id = 1;
+
+UPDATE [asset]
+SET location_id = 1
+WHERE id = 1;
+
+UPDATE [asset]
+SET model = 'SMALL_LAPTOP'
+WHERE id = 1;
+
+
+UPDATE [asset]
+SET deprecation = '2025-07-19 19:14:27.000'
+WHERE id = 2;
+
+UPDATE [asset]
+SET current_user_id = 2
+WHERE id = 2;
+
+UPDATE [asset]
+SET crest_code = 1
+WHERE id = 2;
+
+UPDATE [asset]
+SET status = 'IN_USE'
+WHERE id = 2;
+
+UPDATE [asset]
+SET location_id = 2
+WHERE id = 2;
+
+UPDATE [asset]
+SET model = 'SMALL_LAPTOP'
+WHERE id = 2;
+
+
+UPDATE [asset]
+SET deprecation = '2025-07-19 19:14:27.000'
+WHERE id = 3;
+
+UPDATE [asset]
+SET current_user_id = 3
+WHERE id = 3;
+
+UPDATE [asset]
+SET crest_code = 3
+WHERE id = 3;
+
+UPDATE [asset]
+SET status = 'IN_USE'
+WHERE id = 3;
+
+UPDATE [asset]
+SET location_id = 3
+WHERE id = 3;
+
+UPDATE [asset]
+SET model = 'SMALL_LAPTOP'
+WHERE id = 3;
+
 alter table asset
     alter column serial_number nvarchar(max) not null
 go
